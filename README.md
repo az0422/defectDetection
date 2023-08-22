@@ -1,1 +1,1 @@
-# defectDetection
+# 결함 탐지 시스템
