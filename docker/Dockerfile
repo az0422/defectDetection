@@ -22,9 +22,9 @@ RUN git clone https://github.com/az0422/CustomizedYOLO &&\
     pip install jupyter notebook==6.4.12
 
 WORKDIR /home/detector/workspace
-RUN wget https://github.com/az0422/defectDetection/tree/main/weights/weights.pt &&\
-    wget https://github.com/az0422/defectDetection/tree/main/example/example.ipynb &&\
-    mkdir detect
+COPY ../weights/weights.pt .
+COPY ../example/example.ipynb .
+RUN mkdir detect
 
 WORKDIR /home/detector
 
