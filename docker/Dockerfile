@@ -19,7 +19,7 @@ WORKDIR /home/${username}
 
 RUN git clone https://github.com/az0422/CustomizedYOLO &&\
     pip install ./CustomizedYOLO &&\
-    pip install jupyter notebook==6.4.12
+    pip install jupyter notebook
 
 WORKDIR /home/detector/workspace
 COPY example/* /home/detector/workspace/
